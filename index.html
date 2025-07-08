@@ -1,21 +1,491 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Blue Healthtech Web</title>
+    <title>The Blue Healthtech - Digital Transformation for Health Equity</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <h1>Welcome to The Blue Healthtech Web</h1>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo_the_blue_healthtech.jpg" alt="The Blue Healthtech Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero"><span class="fr">Accueil</span><span class="en" style="display:none">Home</span></a></li>
+                    <li><a href="#about"><span class="fr">À Propos</span><span class="en" style="display:none">About</span></a></li>
+                    <li><a href="#solutions"><span class="fr">Nos Solutions</span><span class="en" style="display:none">Our Solutions</span></a></li>
+                    <li><a href="#events"><span class="fr">Notre Impact</span><span class="en" style="display:none">Our Impact</span></a></li>
+                    <li><a href="mailto:info@tbhc.uk"><span class="fr">Contact</span><span class="en" style="display:none">Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <button id="lang-fr" class="active">FR</button> |
+                <button id="lang-en">EN</button>
+            </div>
+        </div>
     </header>
+
     <main>
-        <p>This is your new static website project. Start building something great!</p>
+        <section class="hero" id="hero">
+            <div class="container">
+                <h1>
+                    <span class="fr">La Transformation Numérique au service de l'Équité en Santé</span>
+                    <span class="en" style="display:none">Digital Transformation for Health Equity</span>
+                </h1>
+                <p>
+                    <span class="fr">Nous développons des plateformes innovantes pour rendre les soins de qualité accessibles à tous, en maintenant les populations dans une "zone bleue de bien-être".</span>
+                    <span class="en" style="display:none">We develop innovative platforms to make quality healthcare accessible to all, keeping populations in a "blue zone of well-being".</span>
+                </p>
+                <a href="#" class="cta-button">
+                    <span class="fr">Planifier un appel</span>
+                    <span class="en" style="display:none">Book a Call</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container fr">
+                <h2>À Propos</h2>
+                <h3>Vision et Motivation</h3>
+                <p>The Blue Healthtech n'est pas née par hasard. Elle est le fruit d'une vision et d'une conviction profonde, portées par notre co-fondateur, Izhar Mahjoub, un expert reconnu en systèmes d'information de santé et en transformation numérique. Depuis notre création en janvier 2025 au Royaume-Uni, notre ambition est claire : faire émerger des solutions innovantes qui changent radicalement notre approche de la santé.</p>
+                <p>Cette vision s'est notamment exprimée au sein de la commission scientifique de l'AMDHC (Africa & Middle East Digital Health Conference), où Izhar Mahjoub a partagé son ambition : faire de la Tunisie la "Silicon Valley de l'informatique médicale" en Afrique du Nord. Comment ? En s'appuyant sur l'incroyable vivier de compétences locales pour créer des technologies qui aident les populations à rester le plus longtemps possible dans une "zone bleue de bien-être".</p>
+                <p>Plutôt que de simplement traiter la maladie, nous cherchons à prolonger les phases de santé optimale grâce à une prévention intelligente et proactive.</p>
+                <h3>La Motivation qui nous Anime</h3>
+                <ul>
+                    <li><strong>Passer de la maladie à la santé :</strong> Nous refusons la fatalité. Grâce à l'analyse continue des données, nous voulons anticiper et prévenir le passage vers les "zones rouges" de la maladie, en agissant avant qu'il ne soit trop tard.</li>
+                    <li><strong>Rendre la santé numérique accessible à tous :</strong> Notre mission est de connecter les populations, même les plus isolées, à des soins de qualité. Nous le faisons en développant des outils technologiques adaptés et inclusifs, car la géographie ne devrait jamais être un obstacle à la santé.</li>
+                    <li><strong>Renforcer l'écosystème local pour un impact mondial :</strong> Nous croyons au potentiel de l'écosystème tunisien. En valorisant les compétences locales en informatique et en santé, nous voulons créer des solutions de classe mondiale qui rayonnent à l'échelle internationale.</li>
+                </ul>
+                <h3>Équipe</h3>
+                <h4>Fondateurs & Dirigeants</h4>
+                <ul>
+                    <li><strong>Izhar Mahjoub - Fondateur :</strong> Pionnier de la Santé Numérique, Izhar possède plus de 20 ans d'expérience en santé numérique et en interopérabilité. Il a été le précurseur de solutions basées sur l'IA visant à prévenir les blessures et à réduire de manière significative les temps de récupération.<br><img src="assets/izhar.jpg" alt="Portrait Izhar Mahjoub" class="portrait"></li>
+                    <li><strong>Fouad Omri - CTO (Directeur Technique) :</strong> Expert en Intelligence Artificielle et en Machine Learning, Fouad a piloté de multiples projets de développement logiciel réussis qui ont permis d'améliorer la sécurité et la performance des athlètes.<br><img src="assets/fouad.jpg" alt="Portrait Fouad Omri" class="portrait"></li>
+                    <li><strong>Amin Zerguini - Responsable du Développement Commercial :</strong> Grâce à son expertise en stratégie de marché et en partenariats, Amin a étendu notre portée, rendant nos solutions accessibles à un plus grand nombre d'athlètes et d'équipes.<br><img src="assets/amin.jpg" alt="Portrait Amin Zerguini" class="portrait"></li>
+                </ul>
+                <h4>Conseil Stratégique & Experts</h4>
+                <ul>
+                    <li><strong>Dr. ILUNGA KALENGA Oly - Membre du Conseil :</strong> Médecin, docteur en santé publique et économiste de la santé, le Dr. Ilunga a occupé les postes de directeur médical des Cliniques de l'Europe en Belgique et de Ministre de la Santé au Congo. Depuis 2019, il axe ses travaux sur la santé numérique et l'IA en médecine.<br><img src="assets/ilunga.jpg" alt="Portrait Dr. ILUNGA KALENGA Oly" class="portrait"></li>
+                    <li><strong>Karim Chamari - Scientifique du Sport :</strong> Karim est spécialisé en biomécanique et en prévention des blessures. Il contribue à des recherches de pointe qui sont au cœur de nos stratégies.<br><img src="assets/karim.jpg" alt="Portrait Karim Chamari" class="portrait"></li>
+                    <li><strong>Nevine Makram Labib - Scientifique en IA et Analyse de Données :</strong> L'expertise, le réseau et les compétences de Nevine en matière de plaidoyer sont parfaitement alignés avec nos plans d'expansion. Ses contributions seront déterminantes pour notre croissance en Égypte, un marché clé pour The Blue Healthtech.<br><img src="assets/nevin.jpg" alt="Portrait Nevine Makram Labib" class="portrait"></li>
+                    <li><strong>Effa Ettah - Spécialiste de la Recherche et de l'Innovation :</strong> Effa est experte dans la création de collaborations de recherche et d'innovation entre les universités et l'industrie. Elle possède une solide expérience dans le secteur de l'enseignement supérieur et des compétences avérées en négociation, mentorat, consolidation d'équipe et management.<br><img src="assets/effa.jpg" alt="Portrait Effa Ettah" class="portrait"></li>
+                </ul>
+                <h4>Nos Consultants</h4>
+                <ul>
+                    <li><strong>Maged Iskarous - Stratège en Santé Publique Mondiale :</strong> Pharmacien agréé et stratège accompli, Maged Iskarous possède 18 ans d'expérience en leadership dans le renforcement des systèmes de santé et la préparation aux épidémies, avec des interventions aux États-Unis, en Égypte et au sein du Conseil de Coopération du Golfe.<br><img src="assets/maged.jpg" alt="Portrait Maged Iskarous" class="portrait"></li>
+                    <li><strong>Dr. Maged Abdel Azim - Économiste Visionnaire et Stratège :</strong> Économiste accompli, Dr. Maged Abdel Azim est titulaire d'un doctorat et fort de plus de vingt ans d'expérience dans le milieu universitaire, le leadership et l'analyse de politiques publiques. Il est un conférencier, auteur et commentateur médiatique influent sur les questions économiques nationales et internationales.<br><img src="assets/magedazim.jpg" alt="Portrait Dr. Maged Abdel Azim" class="portrait"></li>
+                </ul>
+            </div>
+            <div class="container en" style="display:none">
+                <h2>About</h2>
+                <h3>Vision and Motivation</h3>
+                <p>The Blue Healthtech was not born by chance. It is the result of a vision and a deep conviction, carried by our co-founder, Izhar Mahjoub, a recognized expert in health information systems and digital transformation. Since our creation in January 2025 in the United Kingdom, our ambition has been clear: to bring forth innovative solutions that radically change our approach to health.</p>
+                <p>This vision was notably expressed within the scientific committee of the AMDHC (Africa & Middle East Digital Health Conference), where Izhar Mahjoub shared his ambition: to make Tunisia the "Silicon Valley of medical informatics" in North Africa. How? By relying on the incredible pool of local talent to create technologies that help people stay as long as possible in a "blue zone of well-being."</p>
+                <p>Rather than simply treating disease, we seek to extend periods of optimal health through intelligent and proactive prevention.</p>
+                <h3>Our Driving Motivation</h3>
+                <ul>
+                    <li><strong>From illness to health:</strong> We refuse fatalism. Through continuous data analysis, we aim to anticipate and prevent the transition to the "red zones" of disease, acting before it is too late.</li>
+                    <li><strong>Making digital health accessible to all:</strong> Our mission is to connect populations, even the most isolated, to quality care. We do this by developing adapted and inclusive technological tools, because geography should never be a barrier to health.</li>
+                    <li><strong>Strengthening the local ecosystem for global impact:</strong> We believe in the potential of the Tunisian ecosystem. By valuing local skills in IT and health, we want to create world-class solutions that shine internationally.</li>
+                </ul>
+                <h3>Team</h3>
+                <h4>Founders & Executives</h4>
+                <ul>
+                    <li><strong>Izhar Mahjoub – Founder:</strong> A pioneer in Digital Health, Izhar has over 20 years of experience in digital health and interoperability. He was a forerunner of AI-based solutions to prevent injuries and significantly reduce recovery times.<br><img src="assets/izhar.jpg" alt="Portrait Izhar Mahjoub" class="portrait"></li>
+                    <li><strong>Fouad Omri – CTO (Chief Technical Officer):</strong> An expert in Artificial Intelligence and Machine Learning, Fouad has led multiple successful software development projects that have improved athlete safety and performance.<br><img src="assets/fouad.jpg" alt="Portrait Fouad Omri" class="portrait"></li>
+                    <li><strong>Amin Zerguini – Head of Business Development:</strong> With his expertise in market strategy and partnerships, Amin has expanded our reach, making our solutions accessible to more athletes and teams.<br><img src="assets/amin.jpg" alt="Portrait Amin Zerguini" class="portrait"></li>
+                </ul>
+                <h4>Strategic Council & Experts</h4>
+                <ul>
+                    <li><strong>Dr. ILUNGA KALENGA Oly – Board Member:</strong> Physician, doctor in public health, and health economist, Dr. Ilunga has served as medical director of the Cliniques de l'Europe in Belgium and as Minister of Health in Congo. Since 2019, he has focused his work on digital health and AI in medicine.<br><img src="assets/ilunga.jpg" alt="Portrait Dr. ILUNGA KALENGA Oly" class="portrait"></li>
+                    <li><strong>Karim Chamari – Sports Scientist:</strong> Karim specializes in biomechanics and injury prevention. He contributes to cutting-edge research at the heart of our strategies.<br><img src="assets/karim.jpg" alt="Portrait Karim Chamari" class="portrait"></li>
+                    <li><strong>Nevine Makram Labib – AI and Data Analysis Scientist:</strong> Nevine's expertise, network, and advocacy skills are perfectly aligned with our expansion plans. Her contributions will be key to our growth in Egypt, a key market for The Blue Healthtech.<br><img src="assets/nevin.jpg" alt="Portrait Nevine Makram Labib" class="portrait"></li>
+                    <li><strong>Effa Ettah – Research and Innovation Specialist:</strong> Effa is an expert in creating research and innovation collaborations between universities and industry. She has solid experience in higher education and proven skills in negotiation, mentoring, team building, and management.<br><img src="assets/effa.jpg" alt="Portrait Effa Ettah" class="portrait"></li>
+                </ul>
+                <h4>Our Consultants</h4>
+                <ul>
+                    <li><strong>Maged Iskarous – Global Public Health Strategist:</strong> A licensed pharmacist and accomplished strategist, Maged Iskarous has 18 years of leadership experience in strengthening health systems and epidemic preparedness, with interventions in the US, Egypt, and the Gulf Cooperation Council.<br><img src="assets/maged.jpg" alt="Portrait Maged Iskarous" class="portrait"></li>
+                    <li><strong>Dr. Maged Abdel Azim – Visionary Economist and Strategist:</strong> An accomplished economist, Dr. Maged Abdel Azim holds a PhD and has over twenty years of experience in academia, leadership, and public policy analysis. He is a speaker, author, and influential media commentator on national and international economic issues.<br><img src="assets/magedazim.jpg" alt="Portrait Dr. Maged Abdel Azim" class="portrait"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="solutions" id="solutions">
+            <div class="container fr">
+                <h2>Nos Solutions</h2>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <h3>Conseil en Santé Numérique</h3>
+                        <p>
+                            Nous accompagnons les gouvernements, institutions publiques et organisations privées dans la définition, la planification et la mise en œuvre de leur transformation digitale en santé.<br>
+                            <ul>
+                                <li><strong>Élaboration de stratégies nationales et institutionnelles de santé numérique</strong> (feuille de route, priorisation des projets, alignement avec les standards internationaux).</li>
+                                <li><strong>Audit et diagnostic des systèmes d'information existants</strong> pour identifier les forces, faiblesses et opportunités d'amélioration.</li>
+                                <li><strong>Conception de solutions sur mesure</strong> : interopérabilité, gestion des données de santé, sécurité et conformité réglementaire (RGPD, standards OMS, HL7 FHIR…).</li>
+                                <li><strong>Accompagnement au changement</strong> : formation des équipes, conduite du changement, sensibilisation des parties prenantes.</li>
+                                <li><strong>Veille technologique et benchmark international</strong> pour garantir l'adoption des meilleures pratiques et technologies innovantes.</li>
+                                <li><strong>Gestion de projets complexes</strong> : pilotage, suivi, évaluation d'impact et transfert de compétences.</li>
+                            </ul>
+                            Notre objectif : garantir la réussite de vos projets e-santé, optimiser vos investissements et améliorer durablement la qualité des soins grâce au numérique.
+                        </p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Digital Health Academy</h3>
+                        <p>
+                            Nous formons les futurs experts de la santé numérique via des programmes certifiants innovants et reconnus à l'international.<br>
+                            <ul>
+                                <li><strong>Formations certifiantes et diplômantes</strong> en e-santé, intelligence artificielle appliquée à la santé, gestion des données médicales, cybersécurité, interopérabilité, télémédecine, transformation digitale des établissements, etc.</li>
+                                <li><strong>Parcours personnalisés</strong> adaptés aux besoins des professionnels de santé, ingénieurs, décideurs, étudiants et cadres du secteur public ou privé.</li>
+                                <li><strong>Modules phares</strong> :
+                                    <ul>
+                                        <li>Introduction à la santé numérique</li>
+                                        <li>Intelligence artificielle et Big Data en santé</li>
+                                        <li>Sécurité et confidentialité des données de santé</li>
+                                        <li>Interopérabilité et standards internationaux (HL7 FHIR, IHE...)</li>
+                                        <li>Gestion de projets e-santé</li>
+                                        <li>Télémédecine et nouveaux modèles de soins</li>
+                                        <li>Éthique et réglementation en santé numérique</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Intervenants internationaux</strong> issus du monde académique, hospitalier, industriel et institutionnel.</li>
+                                <li><strong>Plateforme e-learning interactive</strong> : vidéos, cas pratiques, quiz, forums, classes virtuelles, ressources téléchargeables.</li>
+                                <li><strong>Accompagnement personnalisé</strong> : tutorat, coaching, suivi des progrès, préparation à la certification, accès à un réseau d'alumni et à des opportunités de stage ou d'emploi.</li>
+                                <li><strong>Certifications reconnues</strong> et possibilité de double diplomation avec des universités partenaires.</li>
+                            </ul>
+                            Notre objectif : doter les talents de compétences de pointe pour relever les défis de la santé numérique, accélérer l'innovation et contribuer à l'amélioration durable des systèmes de santé.
+                        </p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Plateforme de Santé (SaaS)</h3>
+                        <p>
+                            Une plateforme complète et interopérable pour les prestataires de soins.<br>
+                            <ul>
+                                <li><strong>Gestion centralisée des dossiers patients</strong> : accès sécurisé, partage d'informations en temps réel, historique médical complet.</li>
+                                <li><strong>Interopérabilité</strong> : intégration facile avec d'autres systèmes (hôpitaux, laboratoires, pharmacies) grâce aux standards internationaux (HL7 FHIR, IHE, etc.).</li>
+                                <li><strong>Outils de téléconsultation</strong> : rendez-vous vidéo, messagerie sécurisée, partage de documents médicaux.</li>
+                                <li><strong>Tableaux de bord analytiques</strong> : suivi des indicateurs de performance, gestion des flux de patients, alertes personnalisées.</li>
+                                <li><strong>Sécurité et conformité</strong> : protection des données de santé, gestion des droits d'accès, conformité RGPD et normes locales.</li>
+                                <li><strong>Modules personnalisables</strong> : gestion des prescriptions, facturation, agenda, rappels automatiques, etc.</li>
+                                <li><strong>Support multilingue et assistance dédiée</strong>.</li>
+                            </ul>
+                            Notre objectif : offrir aux professionnels de santé une solution moderne, évolutive et sécurisée pour optimiser la prise en charge des patients et la coordination des soins.
+                        </p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Médecine du Sport Intelligente</h3>
+                        <p>
+                            Un assistant digital basé sur l'IA pour optimiser la santé des athlètes.<br>
+                            <ul>
+                                <li><strong>Suivi individualisé des athlètes</strong> : collecte automatique des données de performance, de santé et de récupération via capteurs connectés (GPS, fréquence cardiaque, sommeil, etc.).</li>
+                                <li><strong>Analyse prédictive des blessures</strong> : détection précoce des risques grâce à l'intelligence artificielle et recommandations personnalisées pour la prévention.</li>
+                                <li><strong>Tableaux de bord dynamiques</strong> : visualisation en temps réel des indicateurs clés (charge d'entraînement, fatigue, récupération, etc.).</li>
+                                <li><strong>Génération automatique de rapports médicaux</strong> : synthèse structurée pour les professionnels de santé, conforme aux standards internationaux.</li>
+                                <li><strong>Planification intelligente des entraînements</strong> : adaptation des séances selon l'état de forme, l'historique de blessures et les objectifs de performance.</li>
+                                <li><strong>Communication sécurisée</strong> entre staff médical, entraîneurs et athlètes.</li>
+                                <li><strong>Confidentialité et sécurité des données</strong> : accès restreint, conformité RGPD.</li>
+                            </ul>
+                            Notre objectif : maximiser la performance, réduire les blessures et prolonger la carrière des sportifs grâce à la puissance de l'IA et de la donnée.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container en" style="display:none">
+                <h2>Our Solutions</h2>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <h3>Digital Health Consulting</h3>
+                        <p>
+                            We support governments, public institutions, and private organizations in defining, planning, and implementing their digital health transformation.<br>
+                            <ul>
+                                <li><strong>Development of national and institutional digital health strategies</strong> (roadmap, project prioritization, alignment with international standards).</li>
+                                <li><strong>Audit and assessment of existing information systems</strong> to identify strengths, weaknesses, and opportunities for improvement.</li>
+                                <li><strong>Design of tailored solutions</strong>: interoperability, health data management, security, and regulatory compliance (GDPR, WHO standards, HL7 FHIR, etc.).</li>
+                                <li><strong>Change management support</strong>: team training, change management, stakeholder awareness.</li>
+                                <li><strong>Technology watch and international benchmarking</strong> to ensure adoption of best practices and innovative technologies.</li>
+                                <li><strong>Management of complex projects</strong>: project leadership, monitoring, impact evaluation, and skills transfer.</li>
+                            </ul>
+                            Our goal: to ensure the success of your e-health projects, optimize your investments, and sustainably improve the quality of care through digital technology.
+                        </p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Digital Health Academy</h3>
+                        <p>
+                            We train future digital health experts through innovative, internationally recognized certification programs.<br>
+                            <ul>
+                                <li><strong>Certification and diploma courses</strong> in e-health, artificial intelligence applied to health, medical data management, cybersecurity, interoperability, telemedicine, digital transformation of healthcare institutions, and more.</li>
+                                <li><strong>Personalized learning paths</strong> tailored to the needs of healthcare professionals, engineers, decision-makers, students, and public or private sector managers.</li>
+                                <li><strong>Key modules</strong>:
+                                    <ul>
+                                        <li>Introduction to Digital Health</li>
+                                        <li>Artificial Intelligence and Big Data in Healthcare</li>
+                                        <li>Health Data Security and Privacy</li>
+                                        <li>Interoperability and International Standards (HL7 FHIR, IHE, etc.)</li>
+                                        <li>e-Health Project Management</li>
+                                        <li>Telemedicine and New Care Models</li>
+                                        <li>Ethics and Regulation in Digital Health</li>
+                                    </ul>
+                                </li>
+                                <li><strong>International instructors</strong> from academia, hospitals, industry, and institutions.</li>
+                                <li><strong>Interactive e-learning platform</strong>: videos, practical cases, quizzes, forums, virtual classes, downloadable resources.</li>
+                                <li><strong>Personalized support</strong>: tutoring, coaching, progress tracking, exam preparation, access to an alumni network and internship or job opportunities.</li>
+                                <li><strong>Recognized certifications</strong> and the possibility of dual degrees with partner universities.</li>
+                            </ul>
+                            Our goal: to equip talents with cutting-edge skills to meet the challenges of digital health, accelerate innovation, and contribute to the sustainable improvement of health systems.
+                        </p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Health Platform (SaaS)</h3>
+                        <p>
+                            A complete and interoperable platform for healthcare providers.<br>
+                            <ul>
+                                <li><strong>Centralized patient record management</strong>: secure access, real-time information sharing, complete medical history.</li>
+                                <li><strong>Interoperability</strong>: easy integration with other systems (hospitals, labs, pharmacies) using international standards (HL7 FHIR, IHE, etc.).</li>
+                                <li><strong>Teleconsultation tools</strong>: video appointments, secure messaging, medical document sharing.</li>
+                                <li><strong>Analytical dashboards</strong>: performance indicators tracking, patient flow management, personalized alerts.</li>
+                                <li><strong>Security and compliance</strong>: health data protection, access rights management, GDPR and local standards compliance.</li>
+                                <li><strong>Customizable modules</strong>: prescription management, billing, scheduling, automatic reminders, etc.</li>
+                                <li><strong>Multilingual support and dedicated assistance</strong>.</li>
+                            </ul>
+                            Our goal: to provide healthcare professionals with a modern, scalable, and secure solution to optimize patient care and care coordination.
+                        </p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Smart Sports Medicine</h3>
+                        <p>
+                            An AI-powered digital assistant to optimize athletes' health.<br>
+                            <ul>
+                                <li><strong>Individualized athlete monitoring</strong>: automatic collection of performance, health, and recovery data via connected sensors (GPS, heart rate, sleep, etc.).</li>
+                                <li><strong>Predictive injury analysis</strong>: early risk detection using artificial intelligence and personalized prevention recommendations.</li>
+                                <li><strong>Dynamic dashboards</strong>: real-time visualization of key indicators (training load, fatigue, recovery, etc.).</li>
+                                <li><strong>Automated medical report generation</strong>: structured summaries for healthcare professionals, compliant with international standards.</li>
+                                <li><strong>Intelligent training planning</strong>: session adaptation based on fitness status, injury history, and performance goals.</li>
+                                <li><strong>Secure communication</strong> between medical staff, coaches, and athletes.</li>
+                                <li><strong>Data privacy and security</strong>: restricted access, GDPR compliance.</li>
+                            </ul>
+                            Our goal: to maximize performance, reduce injuries, and extend athletes' careers through the power of AI and data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="events" id="events">
+            <div class="container fr">
+                <h2>Notre Impact</h2>
+                <div class="project">
+                    <h3>Projet 1 : Stratégie Nationale de Santé Numérique (Tunisie)</h3>
+                    <p><strong>Partenaire :</strong> Ministère de la Santé Tunisien (via le CIMS).</p>
+                    <p><strong>Objectif :</strong> Accompagner la conception de la stratégie nationale de transformation numérique entre 2019 et 2023, notamment sur l'imagerie médicale, l'interopérabilité (HL7 FHIR, OpenHIE) et la mise à niveau des hôpitaux (modèle EMRAM HIMSS).</p>
+                </div>
+                <div class="project">
+                    <h3>Projet 2 : Déploiement d'une Plateforme Médicale pour la FIFA</h3>
+                    <p><strong>Partenaire :</strong> FIFA Medical Center of Excellence d'Alger.</p>
+                    <p><strong>Objectif :</strong> Conception et déploiement international de "Licence+ Médical", une plateforme pour les dossiers médicaux des sportifs déployée dans plus de 50 pays. Gestion d'une équipe de 25 personnes et développement de modules IA pour la prévention des risques.</p>
+                </div>
+                <div class="project">
+                    <h3>Projet 3 : Programme MOHIM (Maroc)</h3>
+                    <p><strong>Partenaire :</strong> Centre d'Innovation en e-Santé (CIeS), Maroc.</p>
+                    <p><strong>Objectif :</strong> Piloter le programme stratégique "MOHIM" pour transformer numériquement le système de santé marocain via l'interopérabilité, les standards internationaux et l'évaluation de la maturité numérique.</p>
+                </div>
+                <div class="project">
+                    <h3>Projet 4 : Modernisation de l'Offre de Soins (Tunisie)</h3>
+                    <p><strong>Partenaire :</strong> Expertise France.</p>
+                    <p><strong>Objectif :</strong> Réaliser une expertise sur les Systèmes d'Information Hospitaliers et la Télémédecine en 2020. Mission menée à bien malgré la crise sanitaire grâce à une grande flexibilité et disponibilité.</p>
+                </div>
+            </div>
+            <div class="container en" style="display:none">
+                <h2>Our Impact</h2>
+                <div class="project">
+                    <h3>Project 1: National Digital Health Strategy (Tunisia)</h3>
+                    <p><strong>Partner:</strong> Tunisian Ministry of Health (via CIMS).</p>
+                    <p><strong>Objective:</strong> Support the design of the national digital transformation strategy between 2019 and 2023, notably on medical imaging, interoperability (HL7 FHIR, OpenHIE), and hospital upgrades (EMRAM HIMSS model).</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2: Deployment of a Medical Platform for FIFA</h3>
+                    <p><strong>Partner:</strong> FIFA Medical Center of Excellence, Algiers.</p>
+                    <p><strong>Objective:</strong> Design and international deployment of "Licence+ Medical," a platform for athletes' medical records deployed in over 50 countries. Managed a team of 25 and developed AI modules for risk prevention.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3: MOHIM Program (Morocco)</h3>
+                    <p><strong>Partner:</strong> Center for e-Health Innovation (CIeS), Morocco.</p>
+                    <p><strong>Objective:</strong> Lead the strategic "MOHIM" program to digitally transform Morocco's health system through interoperability, international standards, and digital maturity assessment.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 4: Modernization of Healthcare Services (Tunisia)</h3>
+                    <p><strong>Partner:</strong> Expertise France.</p>
+                    <p><strong>Objective:</strong> Provide expertise on Hospital Information Systems and Telemedicine in 2020. Mission successfully completed despite the health crisis, thanks to great flexibility and availability.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners" id="partners">
+            <div class="container">
+                <h2>
+                    <span class="fr">Ils nous font confiance</span>
+                    <span class="en" style="display:none">They trust us</span>
+                </h2>
+                <div class="partners-logos">
+                    <img src="assets/ref_logo1.jpg" alt="Logo partenaire ref 1">
+                    <img src="assets/ref_logo2.jpg" alt="Logo partenaire ref 2">
+                    <img src="assets/ref_logo3.jpg" alt="Logo partenaire ref 3">
+                    <img src="assets/ref_logo5.jpg" alt="Logo partenaire ref 5">
+                    <img src="assets/ref_logo6.jpg" alt="Logo partenaire ref 6">
+                    <img src="assets/ref_logo7.jpg" alt="Logo partenaire ref 7">
+                    <img src="assets/ref_logo8.jpg" alt="Logo partenaire ref 8">
+                    <img src="assets/ref_logo9.jpg" alt="Logo partenaire ref 9">
+                    <!-- Ajoutez d'autres logos ici -->
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <div class="container fr">
+                <h2>Produit vedette</h2>
+                <h3>Football Health Predictor</h3>
+                <p>Football Health Predictor révolutionne la gestion du football moderne grâce à une plateforme SaaS complète, intuitive et pilotée par l'intelligence artificielle. Conçue pour répondre aux besoins croissants des clubs, fédérations et académies, Football Health Predictor centralise et automatise l'ensemble des processus essentiels : de l'inscription des joueurs avec intégration FIFA ID à la gestion documentaire, en passant par l'organisation des compétitions, le suivi des performances et la communication interne. Notre solution permet une collecte sécurisée et exhaustive des données joueurs, la gestion numérique des documents officiels, ainsi que l'envoi automatisé de notifications pour garantir la conformité et l'efficacité administrative.</p>
+                <p>Football Health Predictor place la santé et la performance des joueurs au cœur de ses priorités, grâce à des outils avancés de suivi médical, d'analyse de la charge de travail et de prévention des blessures, alimentés par l'IA. Notre assistant médical intelligent automatise la documentation médicale, génère des notes structurées pour les professionnels de santé et garantit des dossiers conformes aux exigences FIFA, infalsifiables et accessibles en toute sécurité. Les alertes IA permettent d'anticiper les risques de blessure, de détecter les signes de surmenage ou de non-conformité anti-dopage, et d'accompagner chaque joueur avec des plans personnalisés d'entraînement et de récupération, basés sur des données issues de capteurs connectés et d'analyses de performance en temps réel.</p>
+                <p>La plateforme intègre également des outils puissants pour l'organisation des compétitions : planification automatisée des rencontres, gestion des classements, statistiques en temps réel, rapports personnalisés et communication fluide entre entraîneurs, joueurs et officiels. Grâce à son architecture multi-tenant, Football Health Predictor s'adapte à toutes les tailles d'organisation, offrant sécurité, évolutivité et fiabilité, tout en réduisant significativement les coûts et la charge administrative.</p>
+                <p>En choisissant Football Health Predictor, vous bénéficiez d'une solution innovante, conforme aux réglementations internationales, qui valorise la donnée, optimise la performance collective et individuelle, et garantit la confidentialité de vos informations sensibles. Offrez à votre organisation un outil de gestion moderne, sécurisé et évolutif, pensé pour accompagner le football d'aujourd'hui et de demain.</p>
+                <div class="products-grid">
+                    <img src="assets/Football Health Predictor1.jpg" alt="Football Health Predictor 1" class="product-img">
+                    <img src="assets/Football Health Predictor2.jpg" alt="Football Health Predictor 2" class="product-img">
+                    <img src="assets/Football Health Predictor3.jpg" alt="Football Health Predictor 3" class="product-img">
+                    <img src="assets/Football Health Predictor4.jpg" alt="Football Health Predictor 4" class="product-img">
+                    <img src="assets/Football Health Predictor5.jpg" alt="Football Health Predictor 5" class="product-img">
+                </div>
+            </div>
+            <div class="container en" style="display:none">
+                <h2>Featured Product</h2>
+                <h3>Football Health Predictor</h3>
+                <p>Football Health Predictor is a next-generation SaaS solution designed to meet the growing and complex needs of football organizations, including clubs, federations, and academies. Built on a robust and secure multi-tenant architecture, Football Health Predictor centralizes, automates, and optimizes all processes related to player management, competitions, and administrative operations, with a strong focus on performance, compliance, and data security.</p>
+                <h4>Centralized Player and Document Management</h4>
+                <p>With Football Health Predictor, player management becomes simple, efficient, and fully compliant with international standards. The platform enables complete player registration with FIFA ID integration, secure collection of personal and medical data, and digital management of all official documents such as IDs, medical certificates, and parental authorizations. Administrators benefit from powerful tools to track expiration dates, receive automatic notifications, and ensure document compliance at all times.</p>
+                <h4>Intelligent Competition Organization</h4>
+                <p>Football Health Predictor transforms competition management with automated scheduling tools, conflict detection, and training calendar management. Match results, rankings, and player statistics are updated in real time, providing clear and detailed insights into individual and team performance. Custom reports and interactive dashboards facilitate decision-making and seamless communication between coaches, players, and officials.</p>
+                <h4>Health, Safety, and Performance: AI Empowering the Player</h4>
+                <p>At the core of Football Health Predictor lies advanced artificial intelligence dedicated to injury prevention and performance optimization. Each player has a digital health record enhanced by AI, allowing comprehensive tracking of injuries, treatments, training loads, and recovery indicators. The automated medical assistant generates structured documentation fully compliant with FIFA standards, tamper-proof, and securely accessible. Intelligent alerts anticipate overtraining risks, detect early signs of anti-doping non-compliance, and support healthcare professionals in their decision-making.</p>
+                <h4>Performance Optimization and Personalized Plans</h4>
+                <p>Football Health Predictor integrates with connected sensors (GPS trackers, heart rate monitors, sleep trackers) to provide real-time monitoring of players' physical condition and performance. AI analyzes this data to propose tailored training and recovery plans adapted to each player's profile and workload, minimizing injury risks and optimizing performance peaks. Coaches gain powerful analytical tools to adjust sessions, monitor progress, and maximize each athlete's potential.</p>
+                <h4>Security, Compliance, and Data Privacy</h4>
+                <p>Data security is a top priority for Football Health Predictor. All information is protected through advanced encryption protocols, strict access controls, and enhanced authentication. The platform complies with the highest regulatory standards, including personal data protection and FIFA compliance, ensuring the integrity and confidentiality of every player's record.</p>
+                <h4>A Scalable, Reliable, and Cost-Effective Solution</h4>
+                <p>Thanks to its cloud-based multi-tenant architecture, Football Health Predictor easily adapts to the size and growth of your organization without heavy infrastructure investments. Updates, new features, and security patches are deployed automatically, ensuring a smooth, modern, and cutting-edge user experience.</p>
+                <p>By choosing Football Health Predictor, you invest in an intelligent, secure, and scalable platform designed to support football stakeholders in digitalizing their operations, optimizing performance, and leveraging data value. Provide your teams with a centralized, high-performance, and compliant management environment, and give your players the best opportunity to succeed both on and off the pitch.</p>
+                <div class="products-grid">
+                    <img src="assets/Football Health Predictor1.jpg" alt="Football Health Predictor 1" class="product-img">
+                    <img src="assets/Football Health Predictor2.jpg" alt="Football Health Predictor 2" class="product-img">
+                    <img src="assets/Football Health Predictor3.jpg" alt="Football Health Predictor 3" class="product-img">
+                    <img src="assets/Football Health Predictor4.jpg" alt="Football Health Predictor 4" class="product-img">
+                    <img src="assets/Football Health Predictor5.jpg" alt="Football Health Predictor 5" class="product-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="flagship-product">
+            <div class="container fr">
+                <h2>Notre Solution Phare : Façonner l'Avenir de l'Interopérabilité en Santé Numérique en Afrique</h2>
+                <p>
+                    Dans le paysage de santé africain en pleine mutation, la fragmentation des données patients dans des silos numériques isolés constitue un obstacle majeur à la qualité des soins et à la prise de décision éclairée. Notre solution phare répond directement à ce défi en offrant une plateforme robuste, sécurisée et évolutive pour l'interopérabilité en santé numérique : elle permet aux cliniciens, établissements et décideurs d'accéder facilement, en temps réel, à des informations patient complètes et fiables.
+                </p>
+                <p>
+                    Au cœur de notre démarche : un double engagement. D'une part, accélérer la maturité numérique des organisations de santé ; d'autre part, instaurer un cadre national dynamique pour l'échange de données de santé. Notre plateforme propose des outils avancés d'évaluation de maturité digitale, permettant aux hôpitaux et cliniques d'analyser et d'améliorer leurs capacités numériques, d'optimiser les processus cliniques et de garantir la disponibilité d'informations précises et actualisées pour les équipes de soins. Cela améliore la sécurité des patients, la précision des diagnostics et pose les bases d'une gouvernance et d'une planification stratégique fondées sur la donnée.
+                </p>
+                <p>
+                    Notre cadre d'interopérabilité est conçu pour permettre l'échange sécurisé et standardisé des données de santé, aussi bien au niveau national qu'entre pays. En s'appuyant sur des technologies open source et des standards internationaux comme HL7 FHIR et les profils IHE, notre solution favorise un écosystème collaboratif où de nouvelles applications et intégrations peuvent être développées, testées et validées en toute sécurité. Le « digital health sandbox » intégré offre un environnement sécurisé pour l'innovation, permettant aux éditeurs et développeurs de démontrer leur conformité et d'accélérer le déploiement de solutions innovantes.
+                </p>
+                <p>
+                    L'impact attendu de notre plateforme va bien au-delà de la clinique. En fournissant aux cliniciens des dossiers patients unifiés et en temps réel, nous améliorons la qualité et la continuité des soins, réduisons les erreurs et favorisons des interventions plus personnalisées, préventives et curatives. Pour les décideurs, notre infrastructure constitue une base fiable pour élaborer des politiques de santé efficaces, soutenir la couverture santé universelle et attirer des investissements nationaux et internationaux dans le secteur.
+                </p>
+                <p>
+                    Pensée pour l'extensibilité, notre solution est prête à intégrer les outils d'IA de nouvelle génération, à faciliter l'échange sécurisé de données de santé transfrontalières et à répondre aux besoins du tourisme médical et des événements internationaux. Avec un accent fort sur la souveraineté des données, notre plateforme garantit que la gouvernance et le contrôle des données de santé restent sous maîtrise nationale, tout en promouvant les standards ouverts et en renforçant les compétences techniques locales.
+                </p>
+                <p>
+                    En définitive, notre produit phare se positionne comme un catalyseur de l'innovation en santé numérique, comblant la fracture digitale et nourrissant un écosystème technologique dynamique. Il offre un modèle reproductible et évolutif pour les pays souhaitant moderniser leur infrastructure de santé, assurant résilience, durabilité et impact à long terme. En choisissant notre solution, vous rejoignez un mouvement pour rendre une santé numérique intégrée et de qualité accessible à des millions de personnes en Afrique et au-delà.
+                </p>
+            </div>
+            <div class="container en" style="display:none">
+                <h2>Our Flagship Solution: Shaping the Future of Digital Health Interoperability in Africa</h2>
+                <p>
+                    In today's rapidly evolving healthcare landscape across Africa, the fragmentation of patient data in isolated digital silos presents a critical barrier to effective care delivery and informed decision-making. Our flagship solution directly addresses this challenge by providing a robust, secure, and scalable platform for digital health interoperability—empowering clinicians, health institutions, and policymakers with seamless access to real-time, comprehensive patient information.
+                </p>
+                <p>
+                    At the heart of our approach lies a dual commitment: accelerating digital maturity within healthcare organizations and establishing a dynamic national framework for health data exchange. Our platform offers advanced digital maturity assessment tools, enabling hospitals and clinics to evaluate and enhance their digital capabilities, streamline clinical workflows, and ensure that accurate, up-to-date information is always at the fingertips of care teams. This not only improves patient safety and diagnostic precision but also lays the groundwork for data-driven governance and strategic health planning.
+                </p>
+                <p>
+                    Our interoperability framework is meticulously engineered to support the secure, standards-based exchange of health data, both within national borders and across regions. By leveraging open-source technologies and internationally recognized standards such as HL7 FHIR and IHE profiles, our solution fosters a collaborative ecosystem where new digital health applications and integrations can be safely developed, tested, and validated. The integrated digital health sandbox provides a secure environment for innovation, allowing vendors and developers to demonstrate compliance and accelerate the deployment of cutting-edge solutions.
+                </p>
+                <p>
+                    The anticipated impact of our platform extends far beyond the clinic. By equipping clinicians with unified, real-time patient records, we enhance the quality and continuity of care, reduce errors, and enable more personalized, preventive, and curative interventions. For policymakers, our infrastructure delivers a reliable evidence base for shaping effective health strategies, supporting universal health coverage initiatives, and attracting both domestic and international investment in the healthcare sector.
+                </p>
+                <p>
+                    Designed for extensibility, our solution is ready to support the integration of next-generation AI-driven tools, facilitate secure cross-border health data exchange, and underpin the needs of medical tourism and international events. With a strong emphasis on data sovereignty, our platform ensures that governance and control over health data remain firmly within national frameworks, while promoting open standards and building local technical capacity.
+                </p>
+                <p>
+                    Ultimately, our flagship product stands as a catalyst for digital health innovation, bridging the digital divide and nurturing a thriving health technology ecosystem. It offers a replicable, scalable model for countries seeking to modernize their health infrastructure, ensuring resilience, sustainability, and long-term impact. By choosing our solution, you join a movement to make truly integrated, high-quality digital healthcare a reality for millions across Africa and beyond.
+                </p>
+            </div>
+        </section>
+
+        <section class="keynotes" id="keynotes">
+            <div class="container fr">
+                <h2>Keynotes et Conférences</h2>
+                <div class="keynotes-grid">
+                    <img src="assets/Conf1.jpg" alt="Conférence 1" class="keynote-img">
+                    <img src="assets/Conf2.jpg" alt="Conférence 2" class="keynote-img">
+                    <img src="assets/Conf3.jpg" alt="Conférence 3" class="keynote-img">
+                    <img src="assets/Conf4.jpg" alt="Conférence 4" class="keynote-img">
+                    <img src="assets/Conf5.jpg" alt="Conférence 5" class="keynote-img">
+                    <img src="assets/Conf7.jpg" alt="Conférence 7" class="keynote-img">
+                </div>
+            </div>
+            <div class="container en" style="display:none">
+                <h2>Keynotes and Conferences</h2>
+                <div class="keynotes-grid">
+                    <img src="assets/Conf1.jpg" alt="Keynote 1" class="keynote-img">
+                    <img src="assets/Conf2.jpg" alt="Keynote 2" class="keynote-img">
+                    <img src="assets/Conf3.jpg" alt="Keynote 3" class="keynote-img">
+                    <img src="assets/Conf4.jpg" alt="Keynote 4" class="keynote-img">
+                    <img src="assets/Conf5.jpg" alt="Keynote 5" class="keynote-img">
+                    <img src="assets/Conf7.jpg" alt="Keynote 7" class="keynote-img">
+                </div>
+            </div>
+        </section>
+
     </main>
+
     <footer>
-        <p>&copy; 2024 The Blue Healthtech Web</p>
+        <div class="container">
+            <p>
+                <span class="fr">&copy; 2025 The Blue Healthtech. Tous droits réservés.</span>
+                <span class="en" style="display:none">&copy; 2025 The Blue Healthtech. All rights reserved.</span>
+            </p>
+            <p>
+                <span class="fr">Contact : info@tbhc.uk | +216 24 666 073</span>
+                <span class="en" style="display:none">Contact: info@tbhc.uk | +216 24 666 073</span>
+            </p>
+        </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script>
+    // Lang switcher
+    const btnFr = document.getElementById('lang-fr');
+    const btnEn = document.getElementById('lang-en');
+    function switchLang(lang) {
+        document.querySelectorAll('.fr').forEach(e => e.style.display = (lang === 'fr' ? '' : 'none'));
+        document.querySelectorAll('.en').forEach(e => e.style.display = (lang === 'en' ? '' : 'none'));
+        btnFr.classList.toggle('active', lang === 'fr');
+        btnEn.classList.toggle('active', lang === 'en');
+    }
+    btnFr.addEventListener('click', () => switchLang('fr'));
+    btnEn.addEventListener('click', () => switchLang('en'));
+    </script>
+
 </body>
 </html>
