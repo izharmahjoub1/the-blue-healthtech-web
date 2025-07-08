@@ -8,6 +8,24 @@
     --white-color: #ffffff;
 }
 
+/* Language switching - default: French visible, English hidden */
+.en {
+    display: none;
+}
+
+.fr {
+    display: initial;
+}
+
+/* When English is active, hide French and show English */
+body.lang-en .fr {
+    display: none;
+}
+
+body.lang-en .en {
+    display: initial;
+}
+
 /* Style de base */
 body {
     font-family: 'Roboto', sans-serif;
@@ -216,6 +234,22 @@ footer {
     box-shadow: 0 2px 8px rgba(0,90,156,0.10);
     border: 3px solid var(--light-blue);
     background: var(--white-color);
+}
+
+/* Image optimization and loading states */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded,
+img[loading="lazy"]:not([loading]) {
+    opacity: 1;
 }
 
 .products-grid {
