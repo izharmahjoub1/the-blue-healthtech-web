@@ -38,7 +38,7 @@ header .container {
 }
 
 header .logo img {
-    height: 50px; /* Ajustez la taille de votre logo */
+    height: 80px; /* Logo agrandi */
 }
 
 header nav ul {
