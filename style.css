@@ -351,8 +351,8 @@ footer {
 .portrait {
     display: block;
     margin: 16px auto 8px auto;
-    width: 110px;
-    height: 110px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0,90,156,0.10);
