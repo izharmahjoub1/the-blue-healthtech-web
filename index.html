@@ -52,7 +52,7 @@
                     <span class="fr">Nous développons des plateformes innovantes pour rendre les soins de qualité accessibles à tous, en maintenant les populations dans une "zone bleue de bien-être".</span>
                     <span class="en" style="display:none">We develop innovative platforms to make quality healthcare accessible to all, keeping populations in a "blue zone of well-being".</span>
                 </p>
-                <a href="#" class="cta-button">
+                <a href="#contact" class="cta-button">
                     <span class="fr">Planifier un appel</span>
                     <span class="en" style="display:none">Book a Call</span>
                 </a>
@@ -469,6 +469,100 @@
 
     </main>
 
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>
+                <span class="fr">Contactez-nous</span>
+                <span class="en" style="display:none">Contact Us</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>
+                        <span class="fr">Informations de contact</span>
+                        <span class="en" style="display:none">Contact Information</span>
+                    </h3>
+                    <div class="contact-item">
+                        <strong>
+                            <span class="fr">Email :</span>
+                            <span class="en" style="display:none">Email:</span>
+                        </strong>
+                        <a href="mailto:info@tbhc.uk">info@tbhc.uk</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>
+                            <span class="fr">Téléphone :</span>
+                            <span class="en" style="display:none">Phone:</span>
+                        </strong>
+                        <a href="tel:+21624666073">+216 24 666 073</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>
+                            <span class="fr">Adresse :</span>
+                            <span class="en" style="display:none">Address:</span>
+                        </strong>
+                        <span class="fr">Royaume-Uni</span>
+                        <span class="en" style="display:none">United Kingdom</span>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">
+                            <span class="fr">Nom complet *</span>
+                            <span class="en" style="display:none">Full Name *</span>
+                        </label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <span class="fr">Email *</span>
+                            <span class="en" style="display:none">Email *</span>
+                        </label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">
+                            <span class="fr">Entreprise / Organisation</span>
+                            <span class="en" style="display:none">Company / Organization</span>
+                        </label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">
+                            <span class="fr">Sujet *</span>
+                            <span class="en" style="display:none">Subject *</span>
+                        </label>
+                        <select id="subject" name="subject" required>
+                            <option value="" class="fr">Sélectionnez un sujet</option>
+                            <option value="" class="en" style="display:none">Select a subject</option>
+                            <option value="consultation" class="fr">Consultation en Santé Numérique</option>
+                            <option value="consultation" class="en" style="display:none">Digital Health Consulting</option>
+                            <option value="academy" class="fr">Digital Health Academy</option>
+                            <option value="academy" class="en" style="display:none">Digital Health Academy</option>
+                            <option value="platform" class="fr">Plateforme de Santé (SaaS)</option>
+                            <option value="platform" class="en" style="display:none">Health Platform (SaaS)</option>
+                            <option value="sports" class="fr">Médecine du Sport Intelligente</option>
+                            <option value="sports" class="en" style="display:none">Intelligent Sports Medicine</option>
+                            <option value="other" class="fr">Autre</option>
+                            <option value="other" class="en" style="display:none">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">
+                            <span class="fr">Message *</span>
+                            <span class="en" style="display:none">Message *</span>
+                        </label>
+                        <textarea id="message" name="message" rows="5" required class="fr" placeholder="Décrivez votre projet ou vos besoins..."></textarea>
+                        <textarea id="message" name="message" rows="5" required class="en" style="display:none" placeholder="Describe your project or needs..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="fr">Envoyer le message</span>
+                        <span class="en" style="display:none">Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>
@@ -491,9 +585,83 @@
         document.querySelectorAll('.en').forEach(e => e.style.display = (lang === 'en' ? '' : 'none'));
         btnFr.classList.toggle('active', lang === 'fr');
         btnEn.classList.toggle('active', lang === 'en');
+        
+        // Gérer le changement de langue pour le select
+        const subjectSelect = document.getElementById('subject');
+        const currentValue = subjectSelect.value;
+        subjectSelect.innerHTML = '';
+        
+        if (lang === 'fr') {
+            subjectSelect.innerHTML = `
+                <option value="">Sélectionnez un sujet</option>
+                <option value="consultation">Consultation en Santé Numérique</option>
+                <option value="academy">Digital Health Academy</option>
+                <option value="platform">Plateforme de Santé (SaaS)</option>
+                <option value="sports">Médecine du Sport Intelligente</option>
+                <option value="other">Autre</option>
+            `;
+        } else {
+            subjectSelect.innerHTML = `
+                <option value="">Select a subject</option>
+                <option value="consultation">Digital Health Consulting</option>
+                <option value="academy">Digital Health Academy</option>
+                <option value="platform">Health Platform (SaaS)</option>
+                <option value="sports">Intelligent Sports Medicine</option>
+                <option value="other">Other</option>
+            `;
+        }
+        subjectSelect.value = currentValue;
     }
     btnFr.addEventListener('click', () => switchLang('fr'));
     btnEn.addEventListener('click', () => switchLang('en'));
+
+    // Gestion du formulaire de contact
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const submitBtn = this.querySelector('.submit-btn');
+        const originalText = submitBtn.innerHTML;
+        
+        // Désactiver le bouton et changer le texte
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="fr">Envoi en cours...</span><span class="en" style="display:none">Sending...</span>';
+        
+        // Préparer les données pour l'email
+        const isEnglish = document.querySelector('.en').style.display !== 'none';
+        const subject = isEnglish ? 
+            `New contact message - ${formData.get('subject')}` : 
+            `Nouveau message de contact - ${formData.get('subject')}`;
+        
+        const body = isEnglish ? `
+Name: ${formData.get('name')}
+Email: ${formData.get('email')}
+Company: ${formData.get('company')}
+Subject: ${formData.get('subject')}
+
+Message:
+${formData.get('message')}
+        ` : `
+Nom: ${formData.get('name')}
+Email: ${formData.get('email')}
+Entreprise: ${formData.get('company')}
+Sujet: ${formData.get('subject')}
+
+Message:
+${formData.get('message')}
+        `;
+        
+        // Ouvrir l'email avec les données pré-remplies
+        const mailtoLink = `mailto:info@tbhc.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+        
+        // Réactiver le bouton après un délai
+        setTimeout(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+            this.reset();
+        }, 2000);
+    });
     </script>
 
 </body>
